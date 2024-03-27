@@ -9,13 +9,23 @@
         <p>
             <a href="https://www.theodinproject.com/about">Click me for opening in this tab</a>
         </p><!-- open links in new tab using target, default _self-->
+        <!-- href (hypertext reference) without link looks like normal text, with will look like hyperlink-->
         <p>
             <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">Click me for opening in new tab</a>
-        </p><!-- the rel preent links from knowing webpage it was linked from
+        </p><!-- the rel parent links from knowing webpage it was linked from
             and being able to access webpage opened from .. SECURITY -->
         <p>
-            <a href="about.html">About</a>
+            <a href="./pages/about.html">About</a>
+            <!-- normally only index.html in parent directory so make sure to specify path -->
+            <!-- ./ start looking for file relative to current -->
         </p>
-        <img src="./images/dog.jpg">
+        <img src="./images/dog.jpg" alt="Pug in a sweater" height="400" width="310">
+        <!-- need src to display, specifies location of link -->
+        <img ="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo"
+        height="310" width="310">
+        <!-- src and alt REQUIRED elements -->
+        <!-- link doesnt work without src attribute so site displays alt text -->
+        <!-- alt adds alternative text if image doesnt show up or for visually impaired -->
+        <!-- attribute like href and src tell us where links want to go -->
     </body>
 </html>
